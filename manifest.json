@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "DMS Bulk Accept & Complete",
-  "version": "1.0.0",
-  "description": "Adds batch selection and automated bulk processing (Accept on Incoming & Complete on Pending) for DILG DMS.",
+  "name": "DMS Enhancer",
+  "version": "1.1.0",
+  "description": "Streamlines DILG DMS workflows with automated bulk processing (Accept & Complete) and quick modal PDF previews.",
   "homepage_url": "https://luisitovelasco.netlify.app/",
   "icons": {
     "16": "icon16.png",
@@ -26,7 +26,8 @@
       "matches": [
         "https://dms.dilg.gov.ph/documentroute/incoming-document*",
         "https://dms.dilg.gov.ph/documentroute/received-documents*",
-        "https://dms.dilg.gov.ph/documentreceive/pending*"
+        "https://dms.dilg.gov.ph/documentreceive/pending*",
+        "https://dms.dilg.gov.ph/documentroute/documentview*"
       ],
       "js": ["content.js"],
       "css": ["style.css"]
