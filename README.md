@@ -19,17 +19,19 @@ Developed by **[lstvelasco](https://luisitovelasco.netlify.app/)**
 
 ## 🛠️ How to Install in Your Browser
 
-1. **Get the Extension Folder:**
-   - Extract the received `dms-bulk-helper.zip` file to a permanent folder on your PC (e.g., inside `Documents` or `C:\Extensions`).
-2. **Open Extension Management in Browser:**
+1. **Download the Extension:**
+   - Go to the **[Releases](https://github.com/lstvelasco/dms-bulk-complete-release/releases)** section of this repository and download the latest `.zip` release asset.
+2. **Extract the Folder:**
+   - Extract the downloaded `.zip` file to a permanent folder on your PC (e.g., inside `Documents` or `C:\Extensions`).
+3. **Open Extension Management in Browser:**
    - **Google Chrome:** Go to `chrome://extensions/`
    - **Microsoft Edge:** Go to `edge://extensions/`
-3. **Enable Developer Mode:**
+4. **Enable Developer Mode:**
    - Toggle on **Developer mode** (top-right switch in Chrome, or left sidebar toggle in Edge).
-4. **Load the Extension:**
+5. **Load the Extension:**
    - Click the **Load unpacked** button.
-   - Select the extracted `dms-bulk-helper` folder.
-5. **Start Using:**
+   - Select the extracted extension folder.
+6. **Start Using:**
    - Open **Incoming Documents** to perform Bulk Accept.
    - Open **Pending Documents** to perform Bulk Complete.
 
