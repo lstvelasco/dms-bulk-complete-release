@@ -1,0 +1,52 @@
+/* Bulk Action Toolbar Styling */
+#dms-bulk-toolbar {
+  background: #3c8dbc;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+#dms-bulk-toolbar button {
+  background-color: #00a65a;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#dms-bulk-toolbar button:hover {
+  background-color: #008d4c;
+}
+
+#dms-bulk-toolbar button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.dms-select-chk {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.dms-credit-link {
+  color: #ffffff !important;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.dms-credit-link:hover {
+  opacity: 1;
+}
