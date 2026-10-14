@@ -1,36 +1,52 @@
 {
   "manifest_version": 3,
   "name": "DMS Enhancer",
-  "version": "1.1.0",
-  "description": "Streamlines DILG DMS workflows with automated bulk processing (Accept & Complete) and quick modal PDF previews.",
+  "version": "1.5.0",
+  "description": "Streamlines DILG DMS workflows with automated bulk processing (Accept, Complete, Incomplete, & Route Internal), quick modal PDF previews, and custom Dark Mode.",
   "homepage_url": "https://luisitovelasco.netlify.app/",
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   },
   "action": {
+    "default_popup": "popup.html",
     "default_icon": {
-      "16": "icon16.png",
-      "48": "icon48.png",
-      "128": "icon128.png"
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "permissions": [
     "activeTab",
     "scripting",
     "storage"
   ],
+  "host_permissions": [
+    "https://dms.dilg.gov.ph/*"
+  ],
   "content_scripts": [
+    {
+      "matches": [
+        "https://dms.dilg.gov.ph/*"
+      ],
+      "js": ["dark-mode.js"],
+      "css": ["style.css"]
+    },
     {
       "matches": [
         "https://dms.dilg.gov.ph/documentroute/incoming-document*",
         "https://dms.dilg.gov.ph/documentroute/received-documents*",
+        "https://dms.dilg.gov.ph/documentreceive/index*",
         "https://dms.dilg.gov.ph/documentreceive/pending*",
-        "https://dms.dilg.gov.ph/documentroute/documentview*"
+        "https://dms.dilg.gov.ph/documentroute/documentview*",
+        "https://dms.dilg.gov.ph/documentcompleted/index*",
+        "https://dms.dilg.gov.ph/documentcompleted/view*"
       ],
-      "js": ["content.js"],
-      "css": ["style.css"]
+      "js": ["content.js"]
     }
   ]
 }
